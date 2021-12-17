@@ -10,26 +10,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
     <header class="header">
         <div class="header_top">
             <div class="header_logo">
-                <img src="assets/img/logo.png" alt="" class="header_logo_img">
+                <a href="#"><img src="assets/img/logo.png" alt="" class="header_logo_img"></a>
             </div>  
-            <div class="header_menu">
-                <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Портфолио</a></li>
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Оренда платьев</a></li>
-                    <li><a href="">Обучение</a></li>
-                    <li><a href="">Об авторе</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </div>
+            <ul class="header_menu">
+                <li><a href="#" class="header_menu_li active">Главная</a></li>
+                <li><a href="#" class="header_menu_li">Портфолио</a></li>
+                <li><a href="#" class="header_menu_li">Услуги</a></li>
+                <li><a href="#" class="header_menu_li">Оренда платьев</a></li>
+                <li><a href="#" class="header_menu_li">Обучение</a></li>
+                <li><a href="#" class="header_menu_li">Об авторе</a></li>
+                <li><a href="#" class="header_menu_li">Контакты</a></li>
+            </ul>
         </div>
-        <div class="header_photo">
-            <img src="" alt="" class="header_photo_img">
-        </div>
+        <div class="header_photo" style="background-image: url('assets/img/header-photo.jpg');"></div>
     </header>
     <section class="about">
         <div class="about_title">
@@ -38,92 +35,86 @@
         <div class="about_text">
             Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis.
         </div>
-        <div class="about_btn">
-            <a href="" class="about_btn_link">
-                Познакомиться
-            </a>
-        </div>
+        <a href="#" class="about_btn home_button">Познакомиться</a>
     </section>
     <section class="main_slider">
-        <div class="main_slider_item">
-            <div class="main_slider_item_box">
-                <img src="" alt="">
-                <title>1</title>
-                <subtitle>11</subtitle>
-            </div>
+        <div class="main_slider_item" style="background-image: url(assets/img/slider-1.jpg);">
+            <div class="main_slider_title"><a href="#">Портфолио</a></div>
+            <div class="main_slider_subtitle">Портреты</div>
         </div>
-        <div class="main_slider_item">
-            <div class="main_slider_item_box">
-                <img src="" alt="">
-                <title>2</title>
-                <subtitle>22</subtitle>
-            </div>
+        <div class="main_slider_item" style="background-image: url(assets/img/slider-2.jpg);">
+            <div class="main_slider_title"><a href="#">Портфолио</a></div>
+            <div class="main_slider_subtitle">Семейные</div>
         </div>
-        <div class="main_slider_item">
-            <div class="main_slider_item_box">
-                <img src="" alt="">
-                <title>3</title>
-                <subtitle>33</subtitle>
-            </div>
+        <div class="main_slider_item" style="background-image: url(assets/img/slider-3.jpg);">
+            <div class="main_slider_title"><a href="#">Портфолио</a></div>
+            <div class="main_slider_subtitle">События</div>
         </div>
     </section>
     <section class="chapters">
         <div class="chapters_box">
-            <div class="chapters_img">
-                <img src="" alt="" class="chapters_box_img">
+            <div class="chapters_img_wrap">
+                <a href="#">
+                    <div class="chapters_img" style="background-image: url(assets/img/chapter-1.jpg);"></div>
+                </a>
             </div>
             <div class="chapters_title">Портреты</div>
-            <div class="chapters_btn">
-                <a href="" class="chapters_btn_link">Смотреть в портфолио ></a></div>
-            </div>
+            <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
+        </div>
         <div class="chapters_box">
-            <div class="chapters_img">
-                <img src="" alt="" class="chapters_box_img">
+            <div class="chapters_img_wrap">
+                <a href="#">
+                    <div class="chapters_img" style="background-image: url(assets/img/chapter-2.jpg);"></div>
+                </a>
             </div>
             <div class="chapters_title">Love Story</div>
-            <div class="chapters_btn">
-                <a href="" class="chapters_btn_link">Смотреть в портфолио ></a></div>
-            </div>
+            <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
+        </div>
         <div class="chapters_box">
-            <div class="chapters_img">
-                <img src="" alt="" class="chapters_box_img">
+            <div class="chapters_img_wrap">
+                <a href="#">
+                    <div class="chapters_img" style="background-image: url(assets/img/chapter-3.jpg);"></div>
+                </a>
             </div>
             <div class="chapters_title">Беременность</div>
-            <div class="chapters_btn">
-                <a href="" class="chapters_btn_link">Смотреть в портфолио ></a></div>
-            </div>
+            <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
+        </div>
         <div class="chapters_box">
-            <div class="chapters_img">
-                <img src="" alt="" class="chapters_box_img">
+            <div class="chapters_img_wrap">
+                <a href="#">
+                    <div class="chapters_img" style="background-image: url(assets/img/chapter-4.jpg);"></div>
+                </a>
             </div>
             <div class="chapters_title">Семейные</div>
-            <div class="chapters_btn">
-                <a href="" class="chapters_btn_link">Смотреть в портфолио ></a></div>
-            </div>
+            <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
+        </div>
         <div class="chapters_box">
-            <div class="chapters_img">
-                <img src="" alt="" class="chapters_box_img">
+            <div class="chapters_img_wrap">
+                <a href="#">
+                    <div class="chapters_img" style="background-image: url(assets/img/chapter-5.jpg);"></div>
+                </a>
             </div>
             <div class="chapters_title">События</div>
-            <div class="chapters_btn">
-                <a href="" class="chapters_btn_link">Смотреть в портфолио ></a></div>
-            </div>
+            <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
+        </div>
     </section>
     <section class="instagram_works">
         <div class="instagram_works_title">Мои работы в Instagram</div>
-        <a href="" class="instagram_works_link">@instagram</a>
+        <a href="#" class="instagram_works_link">@instagram</a>
     </section>
     <footer class="footer">
         <div class="contact_me">
             <div class="contact_me_title">Свяжитесь со мной:</div>
-            <div class="contact_me_email">email@email.com</div>
+            <a href="email@email.com" rel="nofollow" onclick="this.href='mailto:' + 'email' + '@' + 'email.com'" class="contact_me_email">email@email.com</a>
         </div>
-        <img src="assets/img/logo.png" alt="" class="contact_logo">
+        <div class="contact_me_logo">
+            <a href="#"><img src="assets/img/logo.png" alt="" class="contact_logo"></a>
+        </div>
         <div class="contact_social">
             <div class="contact_social_title">Присоединайтесь:</div>
             <div class="contact_social_links">
-                <a href="" class="contacts_facebook">FB</a>
-                <a href="" class="contacts_instagram">IG</a>
+                <a href="#" class="contacts_facebook">FB</a>
+                <a href="#" class="contacts_instagram">IG</a>
             </div>
         </div>
     </footer>
