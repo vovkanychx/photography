@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anzhelica Photography</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Manrope&family=Playfair+Display&family=Playfair+Display+SC&display=swap">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <!-- Icons by FontAwesome under Font Awesome Free license. No changes where made. https://fontawesome.com/license -->
+    <button onclick="topFunction()" id="topButton" title="Go to top">
+        <img src="assets/icon/chevron-up-solid.svg" alt="">
+    </button>
     <header class="header">
-        <div class="header_top">
+        <div class="header_top wow fadeInDown">
             <div class="header_logo">
                 <a href="#"><img src="assets/img/logo.png" alt="" class="header_logo_img"></a>
             </div>  
@@ -26,33 +33,35 @@
                 <li><a href="#" class="header_menu_li">Контакты</a></li>
             </ul>
         </div>
-        <div class="header_photo" style="background-image: url('assets/img/header-photo.jpg');"></div>
+        <div class="header_photo wow fadeIn" style="background-image: url('assets/img/header-photo.jpg');"></div>
     </header>
     <section class="about">
-        <div class="about_title">
+        <div class="about_title wow fadeInUp">
             Ваш фотограф
         </div>
-        <div class="about_text">
-            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis.
+        <div class="about_text wow fadeInUp">
+            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.</p>
+            <br>
+            <p>Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis.</p>
         </div>
         <a href="#" class="about_btn home_button">Познакомиться</a>
     </section>
     <section class="main_slider">
         <div class="main_slider_item" style="background-image: url(assets/img/slider-1.jpg);">
-            <div class="main_slider_title"><a href="#">Портфолио</a></div>
-            <div class="main_slider_subtitle">Портреты</div>
+            <div class="main_slider_title wow fadeInUp"><a href="#">Портфолио</a></div>
+            <div class="main_slider_subtitle wow fadeIn">Портреты</div>
         </div>
         <div class="main_slider_item" style="background-image: url(assets/img/slider-2.jpg);">
-            <div class="main_slider_title"><a href="#">Портфолио</a></div>
-            <div class="main_slider_subtitle">Семейные</div>
+            <div class="main_slider_title wow fadeInUp"><a href="#">Портфолио</a></div>
+            <div class="main_slider_subtitle wow fadeIn">Семейные</div>
         </div>
         <div class="main_slider_item" style="background-image: url(assets/img/slider-3.jpg);">
-            <div class="main_slider_title"><a href="#">Портфолио</a></div>
-            <div class="main_slider_subtitle">События</div>
+            <div class="main_slider_title wow fadeInUp"><a href="#">Портфолио</a></div>
+            <div class="main_slider_subtitle wow fadeIn">События</div>
         </div>
     </section>
     <section class="chapters">
-        <div class="chapters_box">
+        <div class="chapters_box wow fadeInUp">
             <div class="chapters_img_wrap">
                 <a href="#">
                     <div class="chapters_img" style="background-image: url(assets/img/chapter-1.jpg);"></div>
@@ -61,7 +70,7 @@
             <div class="chapters_title">Портреты</div>
             <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
         </div>
-        <div class="chapters_box">
+        <div class="chapters_box wow fadeInUp">
             <div class="chapters_img_wrap">
                 <a href="#">
                     <div class="chapters_img" style="background-image: url(assets/img/chapter-2.jpg);"></div>
@@ -70,7 +79,7 @@
             <div class="chapters_title">Love Story</div>
             <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
         </div>
-        <div class="chapters_box">
+        <div class="chapters_box wow fadeInUp">
             <div class="chapters_img_wrap">
                 <a href="#">
                     <div class="chapters_img" style="background-image: url(assets/img/chapter-3.jpg);"></div>
@@ -79,7 +88,7 @@
             <div class="chapters_title">Беременность</div>
             <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
         </div>
-        <div class="chapters_box">
+        <div class="chapters_box wow fadeInUp">
             <div class="chapters_img_wrap">
                 <a href="#">
                     <div class="chapters_img" style="background-image: url(assets/img/chapter-4.jpg);"></div>
@@ -88,7 +97,7 @@
             <div class="chapters_title">Семейные</div>
             <a href="#" class="chapters_btn home_button">Смотреть в портфолио ></a>
         </div>
-        <div class="chapters_box">
+        <div class="chapters_box wow fadeInUp">
             <div class="chapters_img_wrap">
                 <a href="#">
                     <div class="chapters_img" style="background-image: url(assets/img/chapter-5.jpg);"></div>
@@ -99,8 +108,8 @@
         </div>
     </section>
     <section class="instagram_works">
-        <div class="instagram_works_title">Мои работы в Instagram</div>
-        <a href="#" class="instagram_works_link">@instagram</a>
+        <div class="instagram_works_title wow fadeInUp">Мои работы в Instagram</div>
+        <a href="#" class="instagram_works_link wow fadeInUp">@instagram</a>
     </section>
     <footer class="footer">
         <div class="contact_me">
@@ -122,6 +131,11 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
             crossorigin="anonymous">
     </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" 
+            integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" 
+            crossorigin="anonymous">
+    </script>
+    <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

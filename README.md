@@ -5,10 +5,16 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* ` finish all styles in main page`
+* `complete menu dropdown`
 
-* ` add animations (wow.js)`
+* `add neccessary icons .svg to page`
 
-* `link fonts`
+* `finish all styles in main page`
+
+* `configure animations (wow.js)`
+
+* `lazy-loading`
+
+* `responsive mobile/tablet`
 
 ## Have fun! :)
