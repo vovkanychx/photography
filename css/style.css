@@ -23,14 +23,20 @@ section{
     outline: none;
     cursor: pointer;
     background-color: transparent;
-  }
-#topButton img{
-    width: 10px;
-    height: 18px;
-    transition: all .1s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-#topButton img:hover{
-    transform: scale(1.2);
+#topButton:hover{
+    transform: scale(1.25);
+}
+.arrow_up{
+    height: 18px;
+    transform: rotateZ(270deg);
+}
+.arrow_down{
+    transform: rotateZ(90deg);
+}
+.arrow_right{
+    color: inherit;
 }
 .header_logo{
     display: flex;
@@ -38,8 +44,8 @@ section{
     margin-top: 40px;
 }
 .header_logo_img{
-    width: 200px;
-    height: 200px;
+    width: 185px;
+    height: 185px;
 }
 .header_menu{
     display: flex;
@@ -89,12 +95,43 @@ section{
     bottom: -10px;
     background-color: #000;
     transition: all ease-in-out .2s;
-  }
-  .header_menu_li:hover::after{
+}
+.header_menu_li:hover::after{
     width: 100%;
     left: 0;
-  }
-  .header_photo{
+}
+.header_dropdown{
+    height: 0;
+    position: absolute;
+    margin-left: -22px;
+    padding-top: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    z-index: 2;
+}
+ul li:hover > ul,
+    ul li ul:hover{
+    visibility: visible;
+    opacity: 1;
+}
+li.header_dropdown_items{
+    padding: 10px 20px;
+    text-align: left;
+    margin-bottom: 1px;
+    background-color: #f9f9f9;
+}
+li.header_dropdown_items a{
+    line-height: 1.25em;
+    font-size: 9px;
+    opacity: 0.75;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+li.header_dropdown_items a:hover{
+    opacity: 1;
+}
+.header_photo{
     margin-top: 40px;
     min-height: 336px;
     max-height: 336px;
@@ -102,6 +139,24 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.header_photo > a{
+    position: absolute;
+    bottom: 8%;
+    height: 8px;
+}
+.header_photo a > .arrow_down{
+    height: 14px;
+}
+.header_photo a{
+    transition: all .3s ease-in-out;
+    opacity: 1;
+}
+.header_photo a:hover{
+    opacity: 0.65;
 }
 .about{
     margin-top: 40px;

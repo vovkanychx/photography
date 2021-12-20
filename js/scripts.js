@@ -16,6 +16,8 @@ function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+// When user clicks on the button, scroll to the next div element
+
 // Active menu elements
 var btns = document.getElementsByClassName("header_menu_li");
 // Go through every menu element to add active class if clicked

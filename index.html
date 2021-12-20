@@ -16,24 +16,45 @@
 <body>
     <!-- Icons by FontAwesome under Font Awesome Free license. No changes where made. https://fontawesome.com/license -->
     <button onclick="topFunction()" id="topButton" title="Go to top">
-        <img src="assets/icon/chevron-up-solid.svg" alt="">
+        <a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_up">
+            <path d="M1.81 0L0 1.83 10.74 13l-1.15 1.21-9.53 9.94L1.84 26 14.3 13z"></path>
+            </svg>
+        </a>
     </button>
     <header class="header">
         <div class="header_top wow fadeInDown">
             <div class="header_logo">
                 <a href="#"><img src="assets/img/logo.png" alt="" class="header_logo_img"></a>
-            </div>  
-            <ul class="header_menu">
-                <li><a href="#" class="header_menu_li active">Главная</a></li>
-                <li><a href="#" class="header_menu_li">Портфолио</a></li>
-                <li><a href="#" class="header_menu_li">Услуги</a></li>
-                <li><a href="#" class="header_menu_li">Оренда платьев</a></li>
-                <li><a href="#" class="header_menu_li">Обучение</a></li>
-                <li><a href="#" class="header_menu_li">Об авторе</a></li>
-                <li><a href="#" class="header_menu_li">Контакты</a></li>
-            </ul>
+            </div>
+            <nav>
+                <ul class="header_menu">
+                    <li><a href="#" class="header_menu_li active">Главная</a></li>
+                    <li>
+                        <a href="#" class="header_menu_li">Портфолио</a>
+                        <ul class="header_dropdown">
+                            <li class="header_dropdown_items"><a href="#">• Портреты</a></li>
+                            <li class="header_dropdown_items"><a href="#">• Love Story</a></li>
+                            <li class="header_dropdown_items"><a href="#">• Беременность</a></li>
+                            <li class="header_dropdown_items"><a href="#">• Семейные</a></li>
+                            <li class="header_dropdown_items"><a href="#">• События</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="header_menu_li">Услуги</a></li>
+                    <li><a href="#" class="header_menu_li">Оренда платьев</a></li>
+                    <li><a href="#" class="header_menu_li">Обучение</a></li>
+                    <li><a href="#" class="header_menu_li">Об авторе</a></li>
+                    <li><a href="#" class="header_menu_li">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="header_photo wow fadeIn" style="background-image: url('assets/img/header-photo.jpg');"></div>
+        <div class="header_photo wow fadeIn" style="background-image: url('assets/img/header-photo.jpg');">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_down">
+                <path d="M1.81 0L0 1.83 10.74 13l-1.15 1.21-9.53 9.94L1.84 26 14.3 13z"></path>
+                </svg>
+            </a>
+        </div>
     </header>
     <section class="about">
         <div class="about_title wow fadeInUp">
