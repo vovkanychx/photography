@@ -16,7 +16,7 @@ function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-// When user clicks on the button, scroll to the next div element on header photo
+// When user clicks on the button, scroll to the following class (on header photo)
 $(".scroll_to_div").click(function() {
   $('html,body').animate({
       scrollTop: $(".about").offset().top},
@@ -48,3 +48,16 @@ $(document).ready(function(){
         pauseOnHover: true
       });
   });
+
+// Prevent dropdown menu for overlapping on browser window
+function dropDownMenu(){
+  var dropDown = document.getElementById('header_dropup');
+  var scrollPos = window.scrollY
+  if (window.onresize && innerHeight < 350){
+    dropDown.style.display = "block";
+    dropDown.style.top = "70px";
+  } else{
+    dropDown.style.display = "block";
+    dropDown.style.top = "auto";
+  }
+}
