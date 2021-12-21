@@ -44,8 +44,8 @@ section{
     margin-top: 40px;
 }
 .header_logo_img{
-    width: 185px;
-    height: 185px;
+    width: 160px;
+    height: 160px;
 }
 .header_menu{
     display: flex;
@@ -133,8 +133,8 @@ li.header_dropdown_items a:hover{
 }
 .header_photo{
     margin-top: 40px;
-    min-height: 336px;
-    max-height: 336px;
+    min-height: 360px;
+    max-height: 360px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

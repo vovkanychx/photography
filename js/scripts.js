@@ -60,7 +60,7 @@ function dropDownMenu(){
   var scrollPos = window.scrollY
   if (window.onresize && innerHeight < 350){
     dropDown.style.display = "block";
-    dropDown.style.top = "70px";
+    dropDown.style.top = "50px";
   } else{
     dropDown.style.display = "block";
     dropDown.style.top = "auto";
