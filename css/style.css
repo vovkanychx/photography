@@ -16,7 +16,7 @@ section{
 #topButton{
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 30px;
     z-index: 99;
     border: none;
@@ -29,7 +29,7 @@ section{
     transform: scale(1.25);
 }
 .arrow_up{
-    height: 18px;
+    height: 14px;
     transform: rotateZ(270deg);
 }
 .arrow_down{
@@ -60,7 +60,7 @@ section{
     font-size: 11px;
     letter-spacing: .1em;
 }
-.header_menu li{
+.header_menu > li{
     padding: 0 10px;
     border: 1px solid transparent;
 }
@@ -103,7 +103,7 @@ section{
 .header_dropdown{
     height: 0;
     position: absolute;
-    margin-left: -22px;
+    margin-left: -26px;
     padding-top: 18px;
     visibility: hidden;
     opacity: 0;
@@ -116,17 +116,17 @@ ul li:hover > ul,
     opacity: 1;
 }
 li.header_dropdown_items{
-    padding: 10px 20px;
     text-align: left;
     margin-bottom: 1px;
     background-color: #f9f9f9;
 }
 li.header_dropdown_items a{
+    display: block;
     line-height: 1.25em;
     font-size: 9px;
     opacity: 0.75;
-    text-align: center;
     transition: all .3s ease-in-out;
+    padding: 10px 20px;
 }
 li.header_dropdown_items a:hover{
     opacity: 1;
@@ -154,12 +154,14 @@ li.header_dropdown_items a:hover{
 .header_photo a{
     transition: all .3s ease-in-out;
     opacity: 1;
+    cursor: pointer;
 }
 .header_photo a:hover{
     opacity: 0.65;
 }
 .about{
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .about_title{
     text-align: center;
@@ -248,7 +250,7 @@ li.header_dropdown_items a:hover{
     margin-top: 100px;
 }
 .chapters_img_wrap{
-    height: 750px;
+    height: 680px;
     min-width: 150px;
     width: 500px;
     max-width: 450px;
@@ -333,8 +335,13 @@ li.header_dropdown_items a:hover{
     display: flex;
     justify-content: flex-end;
 }
-.contact_social_links a{
-    font-size: 16px;
+.contact_social_links a img{
+    height: 16px;
+    margin-left: 15px;
+    transition: .25s all ease-in-out;
+}
+.contact_social_links a img:hover{
+    filter: invert(96%) sepia(6%) saturate(3056%) hue-rotate(298deg) brightness(105%) contrast(94%);
 }
 .contact_me_title, .contact_social_title{
     padding-bottom: 10px;

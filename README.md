@@ -5,10 +5,6 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* `complete menu dropdown`
-
-* `add neccessary icons .svg to page`
-
 * `finish all styles in main page`
 
 * `configure animations (wow.js)`

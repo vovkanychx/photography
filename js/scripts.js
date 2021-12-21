@@ -16,7 +16,12 @@ function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-// When user clicks on the button, scroll to the next div element
+// When user clicks on the button, scroll to the next div element on header photo
+$(".scroll_to_div").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".about").offset().top},
+      'slow');
+});
 
 // Active menu elements
 var btns = document.getElementsByClassName("header_menu_li");
