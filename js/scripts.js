@@ -1,3 +1,8 @@
+// Wait to load all page and animations
+$(document).ready(function() {
+  $('#loading').show();
+});
+
 // Animated popups, fadeins etc: wow.js
 new WOW().init();
 
