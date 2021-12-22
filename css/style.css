@@ -1,3 +1,4 @@
+/* ------------------------------------------------------GLOBAL------------------------------------------------------ */
 *{
     box-sizing: border-box;
     color: #000;
@@ -38,10 +39,18 @@ section{
 .arrow_right{
     color: inherit;
 }
+/* -------------------------------------------------------HEADER----------------------------------------------------- */
+.header{
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
 .header_logo{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .header_logo_img{
     width: 160px;
@@ -133,8 +142,8 @@ li.header_dropdown_items a:hover{
 }
 .header_photo{
     margin-top: 40px;
-    min-height: 360px;
-    max-height: 360px;
+    height: 100%;
+    max-height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,6 +168,46 @@ li.header_dropdown_items a:hover{
 .header_photo a:hover{
     opacity: 0.65;
 }
+/* ------------------------------------------------------FOOTER------------------------------------------------------ */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: calc(50% - 496px);
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.footer, .footer a{
+    color: #464553;
+    font-size: 12px;
+    font-family: "Didact Gothic";
+    line-height: 2.4;
+    letter-spacing: 0.1em;
+}
+.contact_me_email:hover{
+    opacity: 0.8;
+}
+.contact_logo{
+    width: 100px;
+    height: 100px;
+}
+.contact_social_links{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact_social_links a img{
+    height: 16px;
+    margin-left: 15px;
+    transition: .25s all ease-in-out;
+}
+.contact_social_links a img:hover{
+    filter: invert(96%) sepia(6%) saturate(3056%) hue-rotate(298deg) brightness(105%) contrast(94%);
+}
+.contact_me_title, .contact_social_title{
+    padding-bottom: 10px;
+}
+/* -----------------------------------------------------HOME PAGE---------------------------------------------------- */
 .about{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -284,10 +333,10 @@ li.header_dropdown_items a:hover{
     margin-top: 28px;
     font-family: "Didact Gothic";
 }
-.home_button{
+.about_home_button{
     transition: .3s ease-in-out;
 }
-.home_button:hover{
+.about_home_button:hover{
     background-color: #2e2e2e;
     color: #aaa;
     border-color: #2e2e2e;
@@ -307,42 +356,4 @@ li.header_dropdown_items a:hover{
     font-family: "Didact Gothic";
     font-size: 20px;
     letter-spacing: 0.1em;
-}
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-    padding: calc(50% - 496px);
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
-.footer, .footer a{
-    color: #464553;
-    font-size: 12px;
-    font-family: "Didact Gothic";
-    line-height: 2.4;
-    letter-spacing: 0.1em;
-}
-.contact_me_email:hover{
-    opacity: 0.8;
-}
-.contact_logo{
-    width: 100px;
-    height: 100px;
-}
-.contact_social_links{
-    display: flex;
-    justify-content: flex-end;
-}
-.contact_social_links a img{
-    height: 16px;
-    margin-left: 15px;
-    transition: .25s all ease-in-out;
-}
-.contact_social_links a img:hover{
-    filter: invert(96%) sepia(6%) saturate(3056%) hue-rotate(298deg) brightness(105%) contrast(94%);
-}
-.contact_me_title, .contact_social_title{
-    padding-bottom: 10px;
 }

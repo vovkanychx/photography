@@ -5,9 +5,11 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* `100vh header & header_photo to the bottom of the browser window`
+* `change intagram, facebook and e-mail links and text display`
 
-* `finish all styles in main page`
+* `develop about, contacts, portfolio, rent, services, tutorial`
+
+* `finish side paddings of sections`
 
 * `configure animations (wow.js)`
 

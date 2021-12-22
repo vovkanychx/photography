@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anzhelica Photography</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Manrope&family=Playfair+Display&family=Playfair+Display+SC&display=swap">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="loading" style="display:none;" onresize="dropDownMenu()">
+    <!-- Icons by FontAwesome under Font Awesome Free license. No changes where made. https://fontawesome.com/license -->
+    <button onclick="topFunction()" id="topButton" title="Go to top">
+        <a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_up">
+            <path d="M1.81 0L0 1.83 10.74 13l-1.15 1.21-9.53 9.94L1.84 26 14.3 13z"></path>
+            </svg>
+        </a>
+    </button>
+    <header class="header">
+        <div class="header_top wow fadeInDown">
+            <div class="header_logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="" class="header_logo_img"></a>
+            </div>
+            <nav>
+                <ul class="header_menu">
+                    <li><a href="index.html" class="header_menu_li">Главная</a></li>
+                    <li>
+                        <a href="portfolio.html" class="header_menu_li">Портфолио</a>
+                        <ul class="header_dropdown" id="header_dropup">
+                            <li class="header_dropdown_items"><a href="#">• Портреты</a></li>
+                            <li class="header_dropdown_items"><a href="#">• Love Story</a></li>
+                            <li class="header_dropdown_items"><a href="#">• Беременность</a></li>
+                            <li class="header_dropdown_items"><a href="#">• Семейные</a></li>
+                            <li class="header_dropdown_items"><a href="#">• События</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html" class="header_menu_li">Услуги</a></li>
+                    <li><a href="rent.html" class="header_menu_li">Оренда платьев</a></li>
+                    <li><a href="tutorial.html" class="header_menu_li">Обучение</a></li>
+                    <li><a href="about.html" class="header_menu_li">Об авторе</a></li>
+                    <li><a href="contacts.html" class="header_menu_li active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_photo wow fadeIn" id="test" style="background-image: url('assets/img/header-photo.jpg');">
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_down">
+                <path d="M1.81 0L0 1.83 10.74 13l-1.15 1.21-9.53 9.94L1.84 26 14.3 13z"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="contact_me">
+            <div class="contact_me_title">Свяжитесь со мной:</div>
+            <a href="email@email.com" rel="nofollow" onclick="this.href='mailto:' + 'email' + '@' + 'email.com'" class="contact_me_email">email@email.com</a>
+        </div>
+        <div class="contact_me_logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" class="contact_logo"></a>
+        </div>
+        <div class="contact_social">
+            <div class="contact_social_title">Присоединайтесь:</div>
+            <div class="contact_social_links">
+                <a href="#"><img src="assets/icon/instagram-brands.svg" alt=""></a>
+                <a href="#"><img src="assets/icon/facebook-brands.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous">
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
