@@ -5,7 +5,7 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* `develop portfolio.html`
+* `(probably) make photo gallery in session-photos page`
 
 * `finish side paddings of sections`
 
@@ -14,5 +14,9 @@ The web-site is in development mode!
 * `lazy-loading`
 
 * `responsive mobile/tablet`
+
+* `deploy to wordpress`
+
+* `deploy to hosting`
 
 ## Have fun! :)
