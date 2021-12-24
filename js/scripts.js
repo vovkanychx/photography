@@ -39,9 +39,9 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// Slick-slider main page options
+// Slick-slider main page and rent page options
 $(document).ready(function(){
-    $('.main_slider').slick({
+    $('.main_slider, .rent_slider').slick({
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,

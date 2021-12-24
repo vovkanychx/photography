@@ -5,9 +5,7 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* `change intagram, facebook and e-mail links and text display`
-
-* `develop about, contacts, portfolio, rent, services, tutorial`
+* `develop portfolio.html`
 
 * `finish side paddings of sections`
 
