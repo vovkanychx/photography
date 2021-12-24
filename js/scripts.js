@@ -24,7 +24,7 @@ function topFunction() {
 // When user clicks on the button, scroll to the following class (on header photo)
 $(".header_photo > a").click(function() {
   $('html,body').animate({
-      scrollTop: $(".about").offset().top},
+      scrollTop: $("section").offset().top},
       'slow');
 });
 
@@ -59,7 +59,7 @@ function dropDownMenu(){
   var dropDown = document.getElementById('header_dropup');
   if (window.onresize && innerHeight < 450){
     dropDown.style.display = "block";
-    dropDown.style.top = "50px";
+    dropDown.style.top = "30px";
   } else{
     dropDown.style.display = "block";
     dropDown.style.top = "auto";

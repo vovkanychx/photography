@@ -8,6 +8,7 @@ a{
     text-decoration: none;
     color: #000;
     font-size: 16px;
+    cursor: pointer;
 }
 section{
     padding: calc(50% - 590px);
@@ -39,7 +40,7 @@ section{
 .arrow_right{
     color: inherit;
 }
-/* -------------------------------------------------------HEADER----------------------------------------------------- */
+/* ------------------------------------------------------HEADER------------------------------------------------------ */
 .header{
     height: 100vh; 
     width: 100%; 
@@ -77,7 +78,7 @@ section{
     border-bottom: 1px solid transparent;
     position: relative;
 }
-.header_menu li a.header_menu_li.active:before{
+.header_menu li a.header_menu_li.active::before{
     content: '';
     width: 100%;
     height: 1px;
@@ -185,6 +186,9 @@ li.header_dropdown_items a:hover{
     line-height: 2.4;
     letter-spacing: 0.1em;
 }
+.footer > .contact_me, .contact_social{
+    width: 30%;
+}
 .contact_me_email:hover{
     opacity: 0.8;
 }
@@ -200,6 +204,7 @@ li.header_dropdown_items a:hover{
     height: 16px;
     margin-left: 15px;
     transition: .25s all ease-in-out;
+    display: block;
 }
 .contact_social_links a img:hover{
     filter: invert(96%) sepia(6%) saturate(3056%) hue-rotate(298deg) brightness(105%) contrast(94%);
@@ -207,12 +212,31 @@ li.header_dropdown_items a:hover{
 .contact_me_title, .contact_social_title{
     padding-bottom: 10px;
 }
-/* -----------------------------------------------------HOME PAGE---------------------------------------------------- */
-.about{
+.contact_social_title{
+    text-align: right;
+}
+/* ----------------------------------------------HEADER PHOTO SECONDARY---------------------------------------------- */
+.header.secondary{
+    height: auto;
+}
+.header_photo.secondary{
+    max-height: 380px;
+    min-height: 380px;
+}
+.header_photo.secondary > .header_photo_title{
+    font-family: "PlayFair Display";
+    font-size: calc((36vw - 20vw)/ 10 + 1.25rem);
+    color: #fff;
+    position: relative;
+    padding: 10px;
+    margin: auto 0;
+}
+/* ----------------------------------------------------HOME PAGE----------------------------------------------------- */
+.about_main{
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.about_title{
+.about_main_title{
     text-align: center;
     color: #c7c7c7;
     font-size: 16px;
@@ -220,16 +244,16 @@ li.header_dropdown_items a:hover{
     letter-spacing: .2em;
     padding-top: 60px;
 }
-.about_text{
+.about_main_text{
     max-width: 800px;
     text-align: center;
     display: block;
     margin: 40px auto 0;
     font-size: 24px;
-    font-family: "Playfair Display";
+    font-family: "PlayFair Display";
     line-height: 1.4;
 }
-.about_btn{
+.about_main_btn{
     text-align: center;
     display: block;
     margin: 60px auto 0;
@@ -238,7 +262,7 @@ li.header_dropdown_items a:hover{
     border: 1px solid #000;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Playfair Display SC";
+    font-family: "PlayFair Display SC";
 }
 .main_slider{
     margin-top: 40px;
@@ -274,7 +298,7 @@ li.header_dropdown_items a:hover{
     padding: 20px;
     color: #fff;
     font-size: 46px;
-    font-family: "Playfair Display SC";
+    font-family: "PlayFair Display SC";
     letter-spacing: .05em;
     transition: all 0.3s ease-in-out;
 }
@@ -285,7 +309,7 @@ li.header_dropdown_items a:hover{
     bottom: 10%;
     color: #fff;
     font-size: 14px;
-    font-family: "Playfair Display SC";
+    font-family: "PlayFair Display SC";
     letter-spacing: .05em;
 }
 .chapters{
@@ -320,7 +344,7 @@ li.header_dropdown_items a:hover{
 .chapters_title{
     font-size: 24px;
     margin-top: 24px;
-    font-family: "Playfair Display";
+    font-family: "PlayFair Display";
 }
 .chapters_btn{
     text-transform: uppercase;
@@ -333,10 +357,10 @@ li.header_dropdown_items a:hover{
     margin-top: 28px;
     font-family: "Didact Gothic";
 }
-.about_home_button{
+.about_main_button{
     transition: .3s ease-in-out;
 }
-.about_home_button:hover{
+.about_main_button:hover{
     background-color: #2e2e2e;
     color: #aaa;
     border-color: #2e2e2e;
@@ -347,7 +371,7 @@ li.header_dropdown_items a:hover{
 }
 .instagram_works_title{
     font-size: 36px;
-    font-family: "Playfair Display";
+    font-family: "PlayFair Display";
 }
 .instagram_works_link{
     margin-top: 30px;
@@ -356,4 +380,199 @@ li.header_dropdown_items a:hover{
     font-family: "Didact Gothic";
     font-size: 20px;
     letter-spacing: 0.1em;
+}
+/* ----------------------------------------------------SERVICES------------------------------------------------------ */
+.services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: calc(60% - 590px);
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+.services_item{
+    margin-bottom: 200px;
+    width: 45%;
+}
+.services_item:nth-last-child(1){
+    width: 100%;
+}
+.services_card{
+    padding: 40px;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.services_item:nth-child(1n) > .services_card{
+    background-color: #f7f7f7;
+}
+.services_item:nth-child(2n) > .services_card{
+    background-color: #feede8;
+}
+.services_item:nth-child(3) > .services_card{
+    background-color: #f2f7ff;
+}
+.services_kicker, .services_title, .services_subtitle{
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+.services_kicker{
+    font-size: 12px;
+    font-family: "Didact Gothic";
+    letter-spacing: 0.3em;
+}
+.services_title{
+    font-size: 36px;
+    font-family: "PlayFair Display";
+}
+.services_subtitle{
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    text-transform: lowercase;
+}
+.services_text_heading, .services_text{
+    padding: 20px 10px;
+    text-align: center;
+    word-wrap: break-word;
+    position: relative;
+    font-family: "Didact Gothic";
+    letter-spacing: 0.1em;
+    line-height: 2;
+}
+.services_text_heading{
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 40px 10px;
+}
+.services_text_heading::after{
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #e2e2e2a2;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.services_text{
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+.services_text::before{
+    position: absolute;
+    content: '';
+    border-bottom: 1px dashed #f2f2f2;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.services_text:nth-last-child(1)::before{
+    border: none;
+}
+/* -----------------------------------------------------ABOUT-------------------------------------------------------- */
+.about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: calc(60% - 590px);
+    padding-top: 160px;
+    padding-bottom: 80px;
+    word-wrap: break-word;
+}
+.about_item:nth-child(1){
+    width: 40%;
+}
+.about_item:nth-child(2){
+    width: 45%;
+}
+.about_heading{
+    font-size: 43px;
+    font-family: "PlayFair Display";
+    line-height: 1.4;
+}
+.about_author, .about_paragraph{
+    font-size: 12px;
+    font-family: "Didact Gothic";
+}
+.about_author{
+    letter-spacing: 0.25em;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 0.5em;
+    margin-top: 50px;
+}
+.about_author::before, .about_author::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 1px;
+    background-color: #c9c9c9;
+}
+.about_author::before{
+    right: 0.5em;
+}
+.about_author::after{
+    left: 0.5em;
+    margin-right: -50%;
+}
+.about_paragraph{
+    letter-spacing: 0.1em;
+    line-height: 2.5;
+    margin-bottom: 25px;
+}
+/* ---------------------------------------------------CONTACTS------------------------------------------------------- */
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: calc(60% - 590px);
+    padding-top: 160px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-family: "Didact Gothic";
+    line-height: 2.5;
+    letter-spacing: 0.1em;
+}
+.contacts a{
+    text-align: center;
+    font-family: "Didact Gothic";
+    line-height: 2.5;
+    letter-spacing: 0.1em;
+    transition: all .3s ease-in-out;
+}
+.contacts a:hover{
+    opacity: 0.75;
+}
+.contacts_item{
+    width: 30%;
+    margin: 0 15px;
+}
+.contacts_item > .contacts_title, .contacts_link {
+    margin-top: 5px;
+}
+.contacts_title{
+    font-size: 12px;
+}
+.contacts_title.bold{
+    font-weight: 600;
+    font-size: 16px;
+}
+.contacts_link{
+    display: block;
+}
+.contacts_link > img{
+    height: 16px;
+    margin-right: 0.3em;
+    margin-bottom: 0.15em;
+    transition: .25s all ease-in-out;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anzhelica Photography</title>
+    <title>Об авторе</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="loading" style="display:none;" onresize="dropDownMenu()">
-    <!-- Icons by FontAwesome under Font Awesome Free license. No changes where made. https://fontawesome.com/license -->
     <button onclick="topFunction()" id="topButton" title="Go to top">
         <a>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_up">
@@ -48,28 +47,51 @@
                 </ul>
             </nav>
         </div>
-        <div class="header_photo wow fadeIn" id="test" style="background-image: url('assets/img/header-photo.jpg');">
+        <div class="header_photo wow fadeIn" id="test" 
+            style="
+                background-image: url('assets/headers/header-about.jpg'); 
+                filter: grayscale(100%);">
+            <div class="header_photo_title"
+                style="
+                font-family: 'PlayFair Display';
+                font-size: calc((36vw - 20vw)/ 10 + 1.25rem);
+                color: #fff;
+                position: relative;
+                padding: 10px;
+                margin: auto 0;">
+                Об авторе
+            </div>
             <a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_down">
-                <path d="M1.81 0L0 1.83 10.74 13l-1.15 1.21-9.53 9.94L1.84 26 14.3 13z"></path>
+                <path d="M1.81 0L0 1.83 10.74 13l-1.15 1.21-9.53 9.94L1.84 26 14.3 13z" fill="#fff"></path>
                 </svg>
             </a>
         </div>
     </header>
-
+    <section class="about">
+        <div class="about_item">
+            <div class="about_heading">Я проживаю вашу историю вместе с вами: от начала и до конца</div>
+            <div class="about_author">Angelica</div>
+        </div>
+        <div class="about_item">
+            <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate explicabo molestias sit neque accusantium eum commodi eius, aliquid inventore. Aliquam sit, quaerat numquam nostrum a nisi rerum qui quasi!
+            Fugiat aspernatur molestias distinctio tempora. Praesentium consequatur laborum maxime ab provident. Ullam at dolorem, vel alias explicabo et sunt adipisci deserunt!</p>
+            <p class="about_paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint maxime cumque quos aliquam cum consequatur ipsam aliquid animi atque! Illum hic ducimus animi similique dolorem placeat harum ad necessitatibus.</p>
+            <p class="about_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et enim temporibus eaque laborum ullam. Beatae numquam autem est.</p>
+        </div>
+    </section>
     <footer class="footer">
+        <!-- Icons by FontAwesome under Font Awesome Free license. No changes where made. https://fontawesome.com/license -->
         <div class="contact_me">
             <div class="contact_me_title">Свяжитесь со мной:</div>
-            <a href="email@email.com" rel="nofollow" onclick="this.href='mailto:' + 'email' + '@' + 'email.com'" class="contact_me_email">email@email.com</a>
+            <a class="contact_me_email" onclick="this.href='mailto:'+'anzhela_kis'+'@'+'hotmail.com'" target="_blank" rel="noopener noreferrer">anzhela_kis@hotmail.com</a>
         </div>
-        <div class="contact_me_logo">
-            <a href="index.html"><img src="assets/img/logo.png" alt="" class="contact_logo"></a>
-        </div>
+        <a href="index.html"><img src="assets/img/logo.png" alt="Angelica Kis logo" class="contact_logo"></a>
         <div class="contact_social">
             <div class="contact_social_title">Присоединайтесь:</div>
             <div class="contact_social_links">
-                <a href="#"><img src="assets/icon/instagram-brands.svg" alt=""></a>
-                <a href="#"><img src="assets/icon/facebook-brands.svg" alt=""></a>
+                <a onclick="this.href='https:'+'/'+'/'+'instagram.com'+'/kis_angelica_photo'" target="_blank" rel="noopener noreferrer"><img src="assets/icon/instagram-brands.svg" alt="@kis_angelica_photo"></a>
+                <a onclick="this.href='https:'+'/'+'/'+'facebook.com'+'/anzhela.kis'" target="_blank" rel="noopener noreferrer"><img src="assets/icon/facebook-brands.svg" alt="Angelica Kis"></a>
             </div>
         </div>
     </footer>
