@@ -40,6 +40,73 @@ section{
 .arrow_right{
     color: inherit;
 }
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.sidenav_wrap{
+    white-space: nowrap;
+    padding: 40px;
+}
+.sidenav li{
+    text-align: center;
+    padding: 15px 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+.sidenav li a{
+    font-family: "Manrope";
+    font-weight: 700;
+    color: #a1a1a1;
+    letter-spacing: .1em;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.sidenav li a:hover{
+    opacity: 0.8;
+}
+.sidenav_dropdown_list{
+    text-align: center;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .1s linear;
+    z-index: 2;
+}
+.sidenav ul li:hover > ul, ul li ul:hover{
+    padding-top: 25px;
+    height: auto;
+}
+.sidenav_dropdown_list li{
+    padding: 8px;
+}
+.sidenav_dropdown_list li a{
+    display: block;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 57px;
+    right: 15px;
+    margin-left: 50px;
+}
+.navopen{
+    display: none;
+}
+.sidenav li a.nav_active{
+    color: #000;
+}
 /* ------------------------------------------------------HEADER------------------------------------------------------ */
 .header{
     height: 100vh; 
@@ -320,6 +387,8 @@ li.header_dropdown_items a:hover{
     justify-content: space-evenly;
 }
 .chapters_box{
+    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 100px;
 }
 .chapters_img_wrap{
@@ -724,4 +793,29 @@ li.header_dropdown_items a:hover{
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 20px;
+}
+/* ----------------------------------------------------MEDIA--------------------------------------------------------- */
+@media screen and (max-width: 980px){
+    nav .header_menu{
+        display: none;
+    }
+    .navopen{
+        display: block;
+        margin: auto 0;
+        cursor: pointer;
+        margin-right: 40px;
+        font-size: 26px;
+    }
+    .header_logo{
+        justify-content: space-between;
+        padding: 50px 0;
+        padding-bottom: 10px;
+    }
+    .header_logo > a{
+        margin-left: 120px;
+    }
+}
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }

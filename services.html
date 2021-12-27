@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +25,43 @@
         <div class="header_top wow fadeInDown">
             <div class="header_logo">
                 <a href="index.html"><img src="assets/img/logo.png" alt="" class="header_logo_img"></a>
+                <div id="navbar" class="sidenav">
+                    <ul class="sidenav_wrap">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <path 
+                                    stroke="#000" stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    stroke-width="1.5" 
+                                    d="M9 9.5l8-8-8 8-8-8 8 8zm0 0l8 8-8-8-8 8 8-8z">
+                                </path>
+                            </svg>
+                        </a>
+                        <li><a href="index.html">Главная</a></li>
+                        <li>
+                            <a href="portfolio.html" class="sidenav_dropdown">Портфолио</a>
+                            <ul class="sidenav_dropdown_list">
+                                <li><a href="sessions.html">• Портреты</a></li>
+                                <li><a href="sessions.html">• Love Story</a></li>
+                                <li><a href="sessions.html">• Беременность</a></li>
+                                <li><a href="sessions.html">• Семейные</a></li>
+                                <li><a href="sessions.html">• События</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services.html" class="nav_active">Услуги</a></li>
+                        <li><a href="rent.html">Оренда платьев</a></li>
+                        <li><a href="tutorial.html">Обучение</a></li>
+                        <li><a href="about.html">Об авторе</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <span class="navopen" onclick="openNav()">
+                    <svg height="20px" stroke="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17.5">
+                        <line class="hamburger-svg-style" y1="1" x2="18" y2="1"></line>
+                        <line class="hamburger-svg-style" y1="7" x2="18" y2="7"></line>
+                        <line class="hamburger-svg-style" y1="13" x2="18" y2="13"></line>
+                    </svg>
+                </span>
             </div>
             <nav>
                 <ul class="header_menu">

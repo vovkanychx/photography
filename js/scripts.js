@@ -65,3 +65,11 @@ function dropDownMenu(){
     dropDown.style.top = "auto";
   }
 }
+
+// Side navbar open/close functions
+function openNav() {
+  document.getElementById("navbar").style.width = "300px";
+}
+function closeNav() {
+  document.getElementById("navbar").style.width = "0";
+}

@@ -5,9 +5,9 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* `(probably) make photo gallery in session-photos page`
+* `add two slides on main page`
 
-* `finish side paddings of sections`
+* `make photo gallery in session-photos page`
 
 * `configure animations (wow.js)`
 
