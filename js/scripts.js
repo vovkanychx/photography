@@ -67,9 +67,13 @@ function dropDownMenu(){
 }
 
 // Side navbar open/close functions
-function openNav() {
-  document.getElementById("navbar").style.width = "300px";
+function openNav(){
+  if (window.innerWidth <= 786){
+    document.getElementById("navbar").style.width = "100%";
+  } else{
+    document.getElementById("navbar").style.width = "300px";
+  }
 }
-function closeNav() {
+function closeNav(){
   document.getElementById("navbar").style.width = "0";
 }
