@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Manrope&family=Playfair+Display&family=Playfair+Display+SC&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="loading" style="display:none;" onresize="dropDownMenu()">
@@ -88,11 +90,24 @@
     </header>
     <section class="session_photos">
         <div class="session_photos_title">Ivan & Natali</div>
-        <img class="photo" src="assets/portfolio/sessions/photosession/1.JPG" alt="photo">
-        <img class="photo" src="assets/portfolio/sessions/photosession/2.JPG" alt="photo">
-        <img class="photo" src="assets/portfolio/sessions/photosession/3.JPG" alt="photo">
-        <img class="photo" src="assets/portfolio/sessions/photosession/4.JPG" alt="photo">
-        <img class="photo" src="assets/portfolio/sessions/photosession/5.JPG" alt="photo">   
+        <div class="gallery">
+            <!-- LightBox by Andre Rinas. GitHub: https://github.com/andreknieriem/simplelightbox -->
+            <a href="assets/portfolio/sessions/photosession/1.jpg">
+                <img class="photo" src="assets/portfolio/sessions/photosession/1.jpg" alt="photo">
+            </a>
+            <a href="assets/portfolio/sessions/photosession/2.jpg">
+                <img class="photo" src="assets/portfolio/sessions/photosession/2.jpg" alt="photo">
+            </a>
+            <a href="assets/portfolio/sessions/photosession/3.jpg">
+                <img class="photo" src="assets/portfolio/sessions/photosession/3.jpg" alt="photo">
+            </a>
+            <a href="assets/portfolio/sessions/photosession/4.jpg">
+                <img class="photo" src="assets/portfolio/sessions/photosession/4.jpg" alt="photo">
+            </a>
+            <a href="assets/portfolio/sessions/photosession/5.jpg">
+                <img class="photo" src="assets/portfolio/sessions/photosession/5.jpg" alt="photo">
+            </a>
+        </div>
     </section>
     <footer class="footer">
         <!-- Icons by FontAwesome under Font Awesome Free license. No changes where made. https://fontawesome.com/license -->
@@ -115,6 +130,8 @@
     </script>
     <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

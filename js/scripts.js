@@ -1,6 +1,6 @@
 // Wait to load all page and animations
 $(document).ready(function() {
-  $('#loading').show();
+  $("#loading").show();
 });
 
 // Animated popups, fadeins etc: wow.js
@@ -18,14 +18,14 @@ function scrollFunction() {
 }
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({top: 0, behavior: "smooth"});
 }
 
 // When user clicks on the button, scroll to the following class (on header photo)
 $(".header_photo > a").click(function() {
-  $('html,body').animate({
+  $("html,body").animate({
       scrollTop: $("section").offset().top},
-      'slow');
+      "slow");
 });
 
 // Active menu elements
@@ -41,7 +41,7 @@ for (var i = 0; i < btns.length; i++) {
 
 // Slick-slider main page and rent page options
 $(document).ready(function(){
-    $('.main_slider, .rent_slider').slick({
+    $(".main_slider, .rent_slider").slick({
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 // Prevent dropdown menu for overlapping on browser window
 function dropDownMenu(){
-  var dropDown = document.getElementById('header_dropup');
+  var dropDown = document.getElementById("header_dropup");
   if (window.onresize && innerHeight < 450){
     dropDown.style.display = "block";
     dropDown.style.top = "30px";
