@@ -704,26 +704,21 @@ li.header_dropdown_items a:hover{
     padding-bottom: 80px;
 }
 .portfolio_item{
-    max-width: 33%;
     width: 30%;
-    min-width: 250px;
     margin: 0 10px;
     margin-bottom: 100px;
 }
 .portfolio_item_photo{
-    display: block;
-    background-image: url(assets/portfolio/portraits.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    min-height: 350px;
+    width: 100%;
     transition: all .3s ease-in-out;
 }
-.portfolio_item > div{
+.portfolio_item > a{
+    display: block;
     overflow: hidden;
 }
-.portfolio_item > div > .portfolio_item_photo:hover{
+.portfolio_item > a > .portfolio_item_photo:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .portfolio_title{
     padding-top: 10px;
@@ -747,18 +742,17 @@ li.header_dropdown_items a:hover{
 }
 .sessions_item{
     width: 45%;
-    min-width: 300px;
     margin: 0 10px;
     margin-bottom: 100px;
 }
 .sessions_photo_wrap{
     overflow: hidden;
 }
+.sessions_photo > img{
+    width: 100%;
+}
 .sessions_photo{
     display: block;
-    height: 650px;
-    background-size: cover;
-    background-position: center;
     transition: all .5s ease-in-out
 }
 .sessions_item_title{
@@ -767,6 +761,7 @@ li.header_dropdown_items a:hover{
     font-family: "PlayFair Display";
     font-size: 24px;
     font-weight: 400;
+    word-break: break-word;
     color: #464553;
     letter-spacing: 0em;
     line-height: 1.4;
@@ -784,6 +779,10 @@ li.header_dropdown_items a:hover{
 }
 .sl-navigation i{
     font-size: calc((36vw - 20vw)/ 10 + 0.25rem);
+}
+.sl-wrapper .sl-image{
+    left: 50% !important;
+    transform: translateX(-50%) !important;
 }
 .sl-wrapper .sl-image:hover{
     cursor: grab;
@@ -867,6 +866,12 @@ li.header_dropdown_items a:hover{
     .services_card{
         padding: 10px;
     }
+    .sessions{
+        padding-top: 140px;
+    }
+    .session_photos{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 860px) {
     .about_main{
@@ -877,6 +882,16 @@ li.header_dropdown_items a:hover{
     }
     .chapters{
         margin-top: 40px;
+    }
+    .portfolio{
+        padding: 30px;
+        padding-top: 80px;
+    }
+    .portfolio_item{
+        width: 45%;
+    }
+    .sessions{
+        padding-top: 120px;
     }
 }
 @media screen and (max-width: 786px){
@@ -956,21 +971,48 @@ li.header_dropdown_items a:hover{
     .services_title{
         font-size: calc((36vw - 20vw)/ 10 + 1.25rem);
     }
+    .portfolio{
+        padding: 5px;
+        padding-top: 80px;
+    }
+    .sessions{
+        padding-top: 100px;
+    }
+    .session_photos{
+        margin: 100px auto;
+    }
 }
 @media screen and (max-width: 685px){
     .sl-wrapper .sl-close{
         right: 15px;
         top: 15px;
     }
+    .portfolio{
+        padding: 30px;
+        padding-top: 80px;
+    }
+    .portfolio_item{
+        width: 100%;
+    }
+    .sessions{
+        padding-top: 80px;
+    }
 }
 @media screen and (max-width: 580px){
     .sl-wrapper .sl-close{
         right: 30px;
-        top: 20px;
+        top: 10px;
     }
     .about{
         padding: 0;
         padding-top: 100px;
+    }
+    .portfolio{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .session_photos{
+        margin: 80px auto;
     }
 }
 @media screen and (max-width: 560px){
@@ -982,7 +1024,7 @@ li.header_dropdown_items a:hover{
     }
     .sl-wrapper .sl-close{
         right: 30px;
-        top: 30px;
+        top: 20px;
     }
     .contact_logo{
         width: 135px;
@@ -1007,6 +1049,17 @@ li.header_dropdown_items a:hover{
         width: 125px;
         height: 125px;
     }
+    .sessions{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sessions_item{
+        width: 100%;
+    }
+    .sl-wrapper .sl-close{
+        right: 30px;
+        top: 30px;
+    }
 }
 @media screen and (max-width: 380px){
     .chapters_box{
@@ -1025,6 +1078,13 @@ li.header_dropdown_items a:hover{
     .contact_logo{
         width: 100px;
         height: 100px;
+    }
+    .sessions{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sessions_item_title{
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 320px){

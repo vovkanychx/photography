@@ -11,7 +11,7 @@ The web-site is in development mode!
 
 * `lazy-loading`
 
-* `responsive mobile/tablet portfolio, rent, sessions`
+* `responsive mobile/tablet rent`
 
 * `deploy to wordpress`
 
