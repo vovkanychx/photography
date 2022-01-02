@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="loading" style="display:none;" onresize="dropDownMenu()">
+<body id="loading" style="display:none;">
     <button onclick="topFunction()" id="topButton" title="Go to top">
         <a>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 26" class="arrow_up">
@@ -31,7 +31,7 @@
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                                 <path 
-                                    stroke="#000" stroke-linecap="round" 
+                                    stroke="#a1a1a1" stroke-linecap="round" 
                                     stroke-linejoin="round" 
                                     stroke-width="1.5" 
                                     d="M9 9.5l8-8-8 8-8-8 8 8zm0 0l8 8-8-8-8 8 8-8z">
@@ -49,7 +49,7 @@
                                 <li><a href="sessions.html">• События</a></li>
                             </ul>
                         </li>
-                        <li><a href="services.html" class="nav_active">Услуги</a></li>
+                        <li><a href="services.html">Услуги</a></li>
                         <li><a href="rent.html">Оренда платьев</a></li>
                         <li><a href="tutorial.html">Обучение</a></li>
                         <li><a href="about.html">Об авторе</a></li>
@@ -77,7 +77,7 @@
                             <li class="header_dropdown_items"><a href="sessions.html">• События</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html" class="header_menu_li active">Услуги</a></li>
+                    <li><a href="services.html" class="header_menu_li">Услуги</a></li>
                     <li><a href="rent.html" class="header_menu_li">Оренда платьев</a></li>
                     <li><a href="tutorial.html" class="header_menu_li">Обучение</a></li>
                     <li><a href="about.html" class="header_menu_li">Об авторе</a></li>
@@ -85,14 +85,16 @@
                 </ul>
             </nav>
         </div>
-        <div class="header_photo secondary wow fadeIn" id="test" style="background-image: url('assets/headers/header-services.jpg');">
-            <div class="header_photo_title">
+    </header>
+    <section class="head_photo">
+        <div class="header_photo secondary wow fadeIn" style="background-image: url('assets/headers/header-services.jpg');">
+            <div class="header_photo_title title_active wow fadeInUp">
                 Услуги
             </div>
         </div>
-    </header>
+    </section>
     <section class="services">
-        <div class="services_item">
+        <div class="services_item wow fadeInUp" data-wow-offset="50" data-wow-duration="1.5s">
             <div class="services_card">
                 <div class="services_kicker">Формат</div>
                 <div class="services_title">Фото-истории</div>
@@ -109,7 +111,7 @@
                 Срок сдачи фотографий — 14 дней.
             </p>
         </div>
-        <div class="services_item">
+        <div class="services_item wow fadeInUp" data-wow-offset="50" data-wow-duration="1.5s">
             <div class="services_card">
                 <div class="services_kicker">Формат</div>
                 <div class="services_title">Фото-истории</div>
@@ -126,7 +128,7 @@
                 Срок сдачи фотографий — 14 дней.
             </p>
         </div>
-        <div class="services_item">
+        <div class="services_item wow fadeInUp" data-wow-offset="50" data-wow-duration="1.5s">
             <div class="services_card">
                 <div class="services_kicker">Формат</div>
                 <div class="services_title">Фото-истории</div>
@@ -150,7 +152,9 @@
             <div class="contact_me_title">Свяжитесь со мной:</div>
             <a class="contact_me_email" onclick="this.href='mailto:'+'anzhela_kis'+'@'+'hotmail.com'" target="_blank" rel="noopener noreferrer">anzhela_kis@hotmail.com</a>
         </div>
-        <a href="index.html"><img src="assets/img/logo.png" alt="Angelica Kis logo" class="contact_logo"></a>
+        <a href="index.html">
+            <img src="assets/img/logo.png" alt="Angelica Kis logo" class="contact_logo wow fadeIn" data-wow-duration="2s">
+        </a>
         <div class="contact_social">
             <div class="contact_social_title">Присоединайтесь:</div>
             <div class="contact_social_links">

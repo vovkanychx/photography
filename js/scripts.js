@@ -28,16 +28,14 @@ $(".header_photo > a").click(function() {
       "slow");
 });
 
-// Active menu elements
-var btns = document.getElementsByClassName("header_menu_li");
-// Go through every menu element to add active class if clicked
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+// Every menu element add active class if clicked
+$(function() {
+  $('nav a[href^="' + location.pathname.split("/")[1] + '"]').addClass('active');
+})
+// Same for side nav menu elements
+$(function() {
+  $('#navbar a[href^="' + location.pathname.split("/")[1] + '"]').addClass('nav_active');
+});
 
 // Slick-slider main page and rent page options
 $(document).ready(function(){
@@ -49,22 +47,10 @@ $(document).ready(function(){
         speed: 1000,
         slidesToShow: 1,
         fade: true,
-        pauseOnFocus: false,
+        pauseOnFocus: true,
         pauseOnHover: true
       });
   });
-
-// Prevent dropdown menu for overlapping on browser window
-function dropDownMenu(){
-  var dropDown = document.getElementById("header_dropup");
-  if (window.onresize && innerHeight < 450){
-    dropDown.style.display = "block";
-    dropDown.style.top = "30px";
-  } else{
-    dropDown.style.display = "block";
-    dropDown.style.top = "auto";
-  }
-}
 
 // Side navbar open/close functions
 function openNav(){
@@ -77,3 +63,15 @@ function openNav(){
 function closeNav(){
   document.getElementById("navbar").style.width = "0";
 }
+
+// Prevent dropdown menu for overlapping on browser window
+// function dropDownMenu(){
+//   var dropDown = document.getElementById("header_dropup");
+//   if (window.onresize && innerHeight < 450){
+//     dropDown.style.display = "block";
+//     dropDown.style.top = "30px";
+//   } else{
+//     dropDown.style.display = "block";
+//     dropDown.style.top = "auto";
+//   }
+// }

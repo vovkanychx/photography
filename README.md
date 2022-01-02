@@ -5,15 +5,7 @@ The web-site is in development mode!
 
 ## Next steps to do:
 
-* `find a way to make width&height -ratio of image in gallery set to 1 when window <=768`
-
-* `configure close button in lightbox on mobile/tablet`
-
-* `configure animations (wow.js) on children pages`
-
 * `lazy-loading`
-
-* `responsive mobile/tablet rent and check for vertical responsive header`
 
 * `deploy to wordpress`
 
