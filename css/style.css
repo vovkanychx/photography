@@ -1073,6 +1073,9 @@ li.header_dropdown_items a:hover{
     .sessions_item{
         width: 100%;
     }
+    .sl-close{
+        display: block !important;
+    }
 }
 @media screen and (max-width: 380px){
     .chapters_box{
