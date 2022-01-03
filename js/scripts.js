@@ -24,7 +24,7 @@ function topFunction() {
 // When user clicks on the button, scroll to the following class (on header photo)
 $(".header_photo > a").click(function() {
   $("html,body").animate({
-      scrollTop: $("section").offset().top},
+      scrollTop: $("#move_to_element").offset().top},
       "slow");
 });
 
