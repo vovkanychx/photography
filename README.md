@@ -13,4 +13,6 @@ The web-site is in development mode!
 
 * `deploy to hosting`
 
+[Live demo](https://vovkanychx.github.io/photography/)
+
 ## Have fun! :)
